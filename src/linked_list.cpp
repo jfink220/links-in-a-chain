@@ -16,6 +16,10 @@ Node* Node::next(){
 void Node::append(Node* apndNode){
     if(nextPtr == nullptr){
         nextPtr = apndNode;
+    }else{
+        Node* tmpPtr = nextPtr;
+        nextPtr = apndNode;
+        apndNode->append(tmpPtr);
     }
 }
 
