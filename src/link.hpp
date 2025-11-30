@@ -1,5 +1,5 @@
 #include <string>
-
+#pragma once
 class Link {
   private:
     std::string material;
@@ -12,4 +12,4 @@ class Link {
     std::string get_material() {
       return this->material;
     }
-}
+};
